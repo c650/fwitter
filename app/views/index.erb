@@ -1,0 +1,15 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Fwitter</title>
+	</head>
+
+	<body>
+	<ul>
+		<% @tweets.each do |i| %>
+			<li><%= i.user %></li>
+			<li color="blue" font-size="36em"><%= i.content %></li>  
+		<% end %>
+	</ul>
+	</body>
+</html>
