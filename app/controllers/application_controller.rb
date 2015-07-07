@@ -9,6 +9,12 @@ class ApplicationController < Sinatra::Base
 	end
 
 	get "/" do	
+		Fweet.new("me","lol #swag")
+		Fweet.new("chuck", "#mynameischuck")
+		Fweet.new("marty","#imnotMcFly")
+		Fweet.new("King Tut","Where am I?")
+		Fweet.new("NSA","Charles is a boss!")
+		
 		@tweets = Fweet.all
 		erb :index
 	end

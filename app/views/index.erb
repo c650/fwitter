@@ -6,9 +6,8 @@
 
 	<body>
 	<ul>
-		<% @tweets.each do |i| %>
-			<li><%= i.user %></li>
-			<li color="blue" font-size="36em"><%= i.content %></li>  
+		<% @tweets.each do |tweet| %>
+			<li><%= "#{tweet.user} says: #{tweet.content}" %></li> 
 		<% end %>
 	</ul>
 	</body>
